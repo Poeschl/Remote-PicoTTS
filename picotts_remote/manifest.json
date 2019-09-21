@@ -1,0 +1,8 @@
+{
+  "domain": "picotts_remote",
+  "name": "Picotts (Remote)",
+  "documentation": "https://www.home-assistant.io/components/picotts_remote",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": []
+}
