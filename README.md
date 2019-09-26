@@ -10,7 +10,7 @@ Afterwards add following config to your yaml:
 
 ```yaml
 tts:
-  - platform: picotts
+  - platform: picotts_remote
     hostname: <host>
     port: <port>
 
