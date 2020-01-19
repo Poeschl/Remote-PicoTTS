@@ -31,7 +31,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 )
 
 
-def get_engine(hass, config):
+def get_engine(hass, config, discovery_info=None):
     """Set up Pico speech component."""
     return PicoProvider(hass, config[CONF_LANG], config[CONF_HOST], config[CONF_PORT])
 
