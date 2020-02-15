@@ -1,12 +1,34 @@
-# remote picoTTS Home Assistant Component
+# Home Assistant Component for a remote picoTTS installation.
 
-This is a new component for [Home-Assitant](https://www.home-assistant.io/) which integrates picoTTS as a remote server. The server is running inside my [Hass.io picoTTS Addon](https://github.com/Poeschl/Hassio-Addons/tree/master/picoTTS).
+[![hacs_badge](https://img.shields.io/badge/HACS-default-green.svg)](https://github.com/custom-components/hacs)
+
+This is a component for Home Assistant which integrates picoTTS from a remote server.
+Its recommended to run the server via my [Home Assistant Supervisor Addon](https://github.com/Poeschl/Hassio-Addons/tree/master/picoTTS).
 
 # Installation
 
+## HACS
+
+Install it in the `Integrations` tab on the [Home Asssistant Community Store](https://github.com/custom-components/hacs).
+
+## Manual way
 To use it, copy the `picotts_remote` folder inside your `config/custom_components` folder on your home assistant installation first.
 
-Afterwards add following config to your yaml:
+
+# Configuration
+
+Add following config to your yaml if you are using the Supervisor Addon
+
+```yaml
+tts:
+  - platform: picotts_remote
+
+```
+The integration will connect to picoTTS after an Home Assistant restart.
+
+## Other host
+
+For setting your own host and port:
 
 ```yaml
 tts:
@@ -16,6 +38,13 @@ tts:
 
 ```
 
-# Note
+## Language
 
-I intend to integrate this one in the official home assistant components, but got only limited time right now. If you want to help out, go on.
+The languge can be set to the languages: `en-US`, `en-GB`, `de-DE`, `es-ES`, `fr-FR` and `it-IT` via the `language` key.
+
+```yaml
+tts:
+  - platform: picotts_remote
+    language: "de-DE"
+
+```
