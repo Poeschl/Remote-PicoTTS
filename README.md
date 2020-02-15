@@ -1,6 +1,6 @@
 # Home Assistant Component for a remote picoTTS installation.
 
-[![hacs_badge](https://img.shields.io/badge/HACS-default-green.svg)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-default-orange.svg)](https://github.com/custom-components/hacs)
 
 This is a component for Home Assistant which integrates picoTTS from a remote server.
 Its recommended to run the server via my [Home Assistant Supervisor Addon](https://github.com/Poeschl/Hassio-Addons/tree/master/picoTTS).

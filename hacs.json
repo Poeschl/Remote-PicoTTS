@@ -1,0 +1,7 @@
+{
+  "name": "Remote PicoTTS",
+  "render_readme": true,
+  "domains": "tts",
+  "homeassistant": "0.36",
+  "iot_class": "Local Polling"
+}
