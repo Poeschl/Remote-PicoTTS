@@ -1,8 +1,9 @@
 {
   "domain": "picotts_remote",
   "name": "Picotts (Remote)",
-  "documentation": "https://www.home-assistant.io/components/picotts_remote",
+  "version": "1.0.1",
+  "documentation": "https://github.com/Poeschl/Remote-PicoTTS/blob/master/README.md",
   "requirements": [],
   "dependencies": [],
-  "codeowners": []
+  "codeowners": ["@Poeschl"]
 }
